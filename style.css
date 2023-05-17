@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* los estilos del header */
+.header__li a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vh;
+  transition: 0.3s;
+}
+
+.header {
+  /* position: absolute; */
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(30, 28, 28, 0.9);
+  padding: 10px;
+}
+
+.header__img {
+  height: 10vh;
+  border-radius: 3px;
+}
+
+.header__button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__button svg {
+  fill: white;
+}
+
+.header__ul {
+  display: flex;
+  list-style: none;
+}
+
+.header__li {
+  padding: 0 10px;
+}
+
+.activo {
+  text-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 10px cyan, 0 0 10px cyan;
+}
+
+.header__li a:hover {
+  text-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 10px cyan, 0 0 10px cyan;
+}
+
+/* responsive del header */
+
+@media screen and (max-width: 960px) {
+  .header {
+    justify-content: center;
+  }
+
+  .header__li a {
+    font-size: 3.5vh;
+  }
+
+  .header__img {
+    height: 7vh;
+    border-radius: 3px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mostrar {
+    display: none;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .header__img {
+    height: 5vh;
+  }
+
+  .header__button {
+    display: block;
+  }
+
+  .header__ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__li {
+    padding: 5px 0;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+}
+
+/* los estios del main */
+
+.main {
+  /* height: ; */
+}
+
+/* la primera section */
+.primero {
+  background: url("assets/img322.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cortina {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(30, 28, 28, 0.4);
+  display: grid;
+  padding: 0px 0 50px 50px;
+  grid-template-columns: 2.5fr 1fr;
+  color: #fff;
+}
+
+.primero__svg {
+  align-self: center;
+}
+
+.primero__svg svg {
+  width: 50vw;
+}
+
+.primero__content {
+  transition: all 0.5s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.primero__title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5vw;
+}
+
+.primero__subtitle {
+  font-size: 3.5vw;
+}
+
+.primero__text {
+  font-size: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.primero__button {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 3vw;
+  background: #25a6a680;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.primero__button:hover {
+  zoom: 20%;
+  color: #1c8a8a;
+  background-color: #ffffff80;
+}
+
+/* el responsive de la primera seccion */
+@media screen and (max-width: 960px) {
+  .primero__content {
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .primero__title {
+    font-size: 6vw;
+  }
+
+  .primero__subtitle {
+    font-size: 4.5vw;
+  }
+
+  .primero__text {
+    font-size: 2.5vw;
+  }
+
+  .primero__button {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .primero__svg {
+    display: none;
+  }
+
+  .primero__content {
+    gap: 100px;
+  }
+
+  .primero__title {
+    font-size: 20vw;
+  }
+
+  .primero__subtitle {
+    font-size: 8vw;
+  }
+
+  .primero__text {
+    font-size: 4.3vw;
+  }
+
+  .primero__button {
+    font-size: 6vw;
+  }
+}
+
+/* los estilos de la segunda section */
+
+.servicios {
+  display: grid;
+  grid-template-rows: 1.5fr 5fr 0.6fr;
+  padding: 10px 50px;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: rgb(81, 89, 90);
+}
+
+.servicios__titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.servicios__title {
+  font-size: 4vw;
+}
+
+.servicios__subtitle {
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.servicios__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+}
+
+.card__img svg {
+  width: 100%;
+}
+
+.card__title {
+  font-size: 2vw;
+}
+
+.card__content {
+  font-size: 1.2vw;
+}
+
+.servicios a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.servicios__button {
+  border: none;
+  color: #fff;
+  background-color: rgba(30, 28, 28, 0.4);
+  border-radius: 15px;
+  font-size: 3vw;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.servicios__button:hover {
+  color: #000;
+  background-color: #ffffff80;
+}
+
+/* el responsive de la seccion de srvicios */
+
+@media screen and (max-width: 960px) {
+  .servicios__content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .servicios__title {
+    font-size: 6.5vw;
+  }
+
+  .servicios__subtitle {
+    font-size: 2.5vw;
+  }
+
+  .small {
+    height: 100%;
+  }
+
+  .card__title {
+    font-size: 4vw;
+  }
+
+  .card__content {
+    font-size: 2.2vw;
+  }
+
+  .div__button {
+    display: flex;
+    align-items: end;
+    flex-direction: row-reverse;
+  }
+
+  .servicios__button{
+    font-size:4.5vw ;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .smaall{
+    height: 100%;
+  }
+
+  .servicios__content {
+    grid-template-columns: 1fr;
+  }
+
+  .servicios__title {
+    font-size: 8.5vw;
+    text-align: end;
+  }
+
+  .servicios__subtitle {
+    font-size: 3.5vw;
+    text-align: start;
+  }
+
+  .card{
+    margin-top: 50px;
+  }
+
+  .small {
+    height: 100%;
+  }
+
+  .card__title {
+    font-size: 5.5vw;
+  }
+
+  .card__content {
+    font-size: 4vw;
+  }
+
+  .div__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+    margin-top: 50px;
+    
+  }
+
+  .servicios__button{
+    font-size:5.5vw ;
+  }
+
+}
+
+/* los estilos del footer */
+
+.footer__div {
+  align-self: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: rgb(30, 28, 28);
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
