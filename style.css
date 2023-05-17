@@ -11,7 +11,7 @@ body {
   justify-content: space-between;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -211,8 +211,8 @@ a{
     display: none;
   }
 
-  .cortina{
-    padding: 80px 20px;
+  .cortina {
+    padding: 80px 10px;
     grid-template-columns: 1fr;
     justify-content: center;
   }
@@ -341,15 +341,19 @@ a{
     flex-direction: row-reverse;
   }
 
-  .servicios__button{
-    font-size:4.5vw ;
+  .servicios__button {
+    font-size: 4.5vw;
   }
 }
 
 @media screen and (max-width: 480px) {
-
-  .smaall{
+  .smaall {
     height: 100%;
+  }
+
+  .servicios {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .servicios__content {
@@ -366,7 +370,7 @@ a{
     text-align: start;
   }
 
-  .card{
+  .card {
     margin-top: 50px;
   }
 
@@ -385,55 +389,53 @@ a{
   .div__button {
     display: flex;
     flex-direction: row;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
     margin-top: 50px;
-    
   }
 
-  .servicios__button{
-    font-size:5.5vw ;
+  .servicios__button {
+    font-size: 5.5vw;
   }
-
 }
 
 /* los estilos de la seccion de cursos */
-.cursos{
+.cursos {
   background-image: url(assets/img339.jpg);
   background-position: center;
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.padre{
+.padre {
   padding: 10px 50px;
   background-color: rgba(30, 28, 28, 0.6);
-  color:#fff;
+  color: #fff;
   display: grid;
   grid-template-rows: 2fr 3fr 1.5fr;
 }
 
-.cursos__titles{
+.cursos__titles {
   padding: 50px 0;
 }
 
-.cursos__title{
+.cursos__title {
   font-size: 4vw;
   padding-left: 150px;
 }
 
-.cursos__subtitle{
+.cursos__subtitle {
   font-size: 1.5vw;
   text-align: center;
 }
 
-.cursos__cards{
+.cursos__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
 }
 
-.cursos .card{
+.cursos .card {
   color: rgb(30, 28, 28);
   display: flex;
   flex-direction: column;
@@ -444,7 +446,7 @@ a{
   box-shadow: cyan 0px 0px 5px 1px;
 }
 
-.card__button{
+.card__button {
   border: none;
   border-radius: 15px;
   color: #fff;
@@ -452,22 +454,22 @@ a{
   font-size: 2vw;
   padding: 5px 10px;
   align-self: center;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.cursos .card__button:hover{
+.cursos .card__button:hover {
   color: #000;
   background-color: #fff;
 }
 
-.button__content{
+.button__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 }
 
-.cursos__button{
+.cursos__button {
   margin-right: 100px;
   display: flex;
   flex-direction: row;
@@ -479,111 +481,220 @@ a{
   background: none;
   color: #fff;
   font-size: 3vw;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.cursos__button svg{
-  transition: .3s;
+.cursos__button svg {
+  transition: 0.3s;
   fill: #fff;
   height: 100px;
   width: 100px;
 }
 
-.cursos__button:hover{
+.cursos__button:hover {
   font-size: 3.3vw;
   justify-content: space-around;
 }
 
-.cursos__button svg:hover{
-  transform: translateX(20px)
+.cursos__button svg:hover {
+  transform: translateX(20px);
 }
 
 /* el responsive de los cursos */
 
-@media screen and (max-width: 960px){
-
-  .padre{
-    grid-template-rows: .05fr 1fr 0.2fr;
+@media screen and (max-width: 960px) {
+  .padre {
+    grid-template-rows: 0.05fr 1fr 0.2fr;
   }
 
-  .cursos__title{
+  .cursos__title {
     text-align: center;
     padding: 0;
     font-size: 5vw;
   }
-  
-  .cursos__subtitle{
+
+  .cursos__subtitle {
     font-size: 2vw;
   }
 
-  .cursos__cards{
+  .cursos__cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
   }
 
-  .cursos .card{
+  .cursos .card {
     text-align: center;
     padding: 30px;
     width: 60%;
   }
 
-  .card__button{
+  .card__button {
     margin: 50px;
     font-size: 3.5vw;
   }
 
-  .cursos__button{
+  .cursos__button {
     font-size: 5vw;
   }
 
-  .cursos__button:hover{
+  .cursos__button:hover {
     font-size: 5.6vw;
   }
 
-  .der{
+  .der {
     margin-left: 40%;
   }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width: 480px) {
+  .padre {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-  .cursos .card{
+  .cursos .card {
     width: 100%;
     margin: 0;
   }
 
-  .der{
+  .der {
     margin-left: 0;
   }
 
-  .cursos .card__title{
+  .cursos .card__title {
     font-size: 8vw;
   }
 
-  .card button{
+  .card button {
     font-size: 5vw;
   }
 
-  .cursos__title{
+  .cursos__title {
     padding: 10px 0;
     text-align: center;
     font-size: 7vw;
   }
 
-  .cursos__subtitle{
+  .cursos__subtitle {
     font-size: 3.5vw;
   }
 
-  .cursos__button{
+  .cursos__button {
     font-size: 6vw;
     padding: 0;
     margin: 0;
     align-self: center;
   }
 
-  .cursos__button:hover{
+  .cursos__button:hover {
     font-size: 6vw;
+  }
+}
+
+/* los estios de las seccion de informacion */
+.informacion {
+  color: #fff;
+  background-color: rgb(30, 28, 28);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 0px 80px 80px;
+  gap: 30px;
+}
+
+.informacion__content {
+  display: grid;
+  grid-template-rows: 1fr 0.8fr 1fr;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.informacion__title {
+  font-size: 5vw;
+}
+
+.med {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+}
+
+.inf {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.informacion__tel,
+.informacion__gmail {
+  color: #fff;
+  background: none;
+  border: #fff solid 2px;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 2vw;
+}
+
+.informacion__img {
+  width: 42vw;
+}
+
+@media screen and (max-width: 960px) {
+  .informacion__imagen {
+    display: none;
+  }
+
+  .informacion {
+    grid-template-columns: 1fr;
+    padding: 80px 50px;
+  }
+
+  .informacion__title {
+    font-size: 7vw;
+  }
+
+  .informacion__content {
+    grid-template-rows: 0.7fr 1fr 1fr;
+  }
+
+  .informacion__promo {
+    margin: 50px 0;
+    font-size: 2.8vw;
+  }
+
+  .informacion__tel,
+  .informacion__gmail {
+    font-size: 3vw;
+  }
+
+  .inf {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .informacion {
+    padding: 40px 20px;
+  }
+
+  .informacion__content {
+    grid-template-rows: 0.5fr 1fr 0.8fr;
+  }
+
+  .informacion__title {
+    text-align: center;
+    font-size: 8.5vw;
+  }
+
+  .informacion__promo {
+    font-size: 4vw;
+  }
+
+  .informacion__tel,
+  .informacion__gmail {
+    font-size: 4.5vw;
   }
 }
 
@@ -593,7 +704,7 @@ a{
   align-self: flex-end;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  background-color: rgb(30, 28, 28);
+  background-color: #000;
   width: 100%;
   text-align: center;
   padding: 5px 0;
