@@ -11,6 +11,10 @@ body {
   justify-content: space-between;
 }
 
+section{
+  height: 100vh;
+}
+
 /* los estilos del header */
 .header__li a {
   text-decoration: none;
