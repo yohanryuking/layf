@@ -212,6 +212,12 @@ body {
     display: none;
   }
 
+  .cortina{
+    padding: 50px 0;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
   .primero__content {
     gap: 100px;
   }
