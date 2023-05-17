@@ -11,6 +11,10 @@ body {
   justify-content: space-between;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* los estilos del header */
 .header__li a {
   text-decoration: none;
@@ -174,7 +178,6 @@ body {
 }
 
 .primero__button:hover {
-  zoom: 20%;
   color: #1c8a8a;
   background-color: #ffffff80;
 }
