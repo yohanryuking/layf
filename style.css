@@ -394,6 +394,27 @@ body {
 
 }
 
+/* los estilos de la seccion de cursos */
+.cursos{
+  background-image: url(assets/img339.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.padre{
+  padding: 10px 50px;
+  background-color: rgba(30, 28, 28, 0.6);
+  color:#fff;
+  display: grid;
+  grid-template-rows: 2fr 3fr 1.5fr;
+}
+
+.cursos__cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
 /* los estilos del footer */
 
 .footer__div {
