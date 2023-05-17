@@ -114,10 +114,6 @@ body {
 
 /* los estios del main */
 
-.main {
-  /* height: ; */
-}
-
 /* la primera section */
 .primero {
   background: url("assets/img322.jpg");
@@ -127,7 +123,7 @@ body {
 
 .cortina {
   width: 100%;
-  background-color: rgba(30, 28, 28, 0.4);
+  background-color: rgba(30, 28, 28, 0.6);
   display: grid;
   padding: 180px 0 180px 50px;
   grid-template-columns: 2.5fr 1fr;
@@ -213,7 +209,7 @@ body {
   }
 
   .cortina{
-    padding: 50px 0;
+    padding: 80px 20px;
     grid-template-columns: 1fr;
     justify-content: center;
   }
