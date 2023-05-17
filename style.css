@@ -269,7 +269,7 @@ body {
   gap: 20px;
 }
 
-.card {
+.servicios .card {
   width: 100%;
 }
 
@@ -441,7 +441,7 @@ body {
   box-shadow: cyan 0px 0px 5px 1px;
 }
 
-.cursos .card__button{
+.card__button{
   border: none;
   border-radius: 15px;
   color: #fff;
@@ -457,7 +457,132 @@ body {
   background-color: #fff;
 }
 
+.button__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
 
+.cursos__button{
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 3vw;
+  transition: .3s;
+}
+
+.cursos__button svg{
+  transition: .3s;
+  fill: #fff;
+  height: 100px;
+  width: 100px;
+}
+
+.cursos__button:hover{
+  font-size: 3.3vw;
+  justify-content: space-around;
+}
+
+.cursos__button svg:hover{
+  transform: translateX(20px)
+}
+
+/* el responsive de los cursos */
+
+@media screen and (max-width: 960px){
+
+  .padre{
+    grid-template-rows: .05fr 1fr 0.2fr;
+  }
+
+  .cursos__title{
+    text-align: center;
+    padding: 0;
+    font-size: 5vw;
+  }
+  
+  .cursos__subtitle{
+    font-size: 2vw;
+  }
+
+  .cursos__cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .cursos .card{
+    text-align: center;
+    padding: 30px;
+    width: 60%;
+  }
+
+  .card__button{
+    margin: 50px;
+    font-size: 3.5vw;
+  }
+
+  .cursos__button{
+    font-size: 5vw;
+  }
+
+  .cursos__button:hover{
+    font-size: 5.6vw;
+  }
+
+  .der{
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width:480px){
+
+  .cursos .card{
+    width: 100%;
+    margin: 0;
+  }
+
+  .der{
+    margin-left: 0;
+  }
+
+  .cursos .card__title{
+    font-size: 8vw;
+  }
+
+  .card button{
+    font-size: 5vw;
+  }
+
+  .cursos__title{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 7vw;
+  }
+
+  .cursos__subtitle{
+    font-size: 3.5vw;
+  }
+
+  .cursos__button{
+    font-size: 6vw;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+  }
+
+  .cursos__button:hover{
+    font-size: 6vw;
+  }
+}
 
 /* los estilos del footer */
 
