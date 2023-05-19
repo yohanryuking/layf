@@ -8,4 +8,5 @@ function inicio() {
 
 function mostrar() {
     document.querySelector(".header__nav").classList.toggle("mostrar");
+    document.querySelector(".oculto").classList.toggle("subir");
 }

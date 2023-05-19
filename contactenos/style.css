@@ -112,6 +112,22 @@ body {
   }
 }
 
+/* los estilos del main */
+
+.oculto {
+  position: absolute;
+  background-color: #000000c9;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+  .subir{
+    z-index: 2;
+  }
+}
+
 /* los estilos del footer */
 
 .footer__div {
