@@ -52,35 +52,46 @@
       </nav>
     </header>
     <main>
+      <div class="oculto"></div>
       <section class="contacto">
         <h1 class="contactoTitle">Contactenos</h1>
         <form action="" class="contactoForm">
-          <label for="nombre" class="labelNombre">Nombre</label>
-          <input type="text" name="" id="nombre" class="nombre" />
-          <label for="asunto" class="labelAsunto">Asunto</label>
-          <input type="text" name="" id="asunto" class="asunto" />
-          <label for="email" class="labelEmail">Correo</label>
-          <input type="email" name="" id="email" class="email" />
-          <label for="texto" class="labelTexta">Contenido</label>
-          <textarea
-            name=""
-            id="texto"
-            cols="30"
-            rows="10"
-            class="texto"
-          ></textarea>
-          <butto class="button">Enviar</butto>
+          <div class="div">
+            <input type="text" name="" id="nombre" class="input"  placeholder=" "/>
+            <label for="nombre" class="label">Nombre</label>
+          </div>
+          <div class="div">
+            <input type="email" name="" id="email" class="input" placeholder=" " />
+            <label for="email" class="label">Correo</label>
+          </div>
+          <div class="div">
+            <input type="text" name="" id="asunto" class="input"  placeholder=" "/>
+            <label for="asunto" class="label">Asunto</label>
+          </div>
+          <div class="div">
+            <label for="texto" class="labelt">Contenido</label>
+            <textarea
+              name=""
+              id="texto"
+              cols="30"
+              rows="10"
+              class="input area"
+              placeholder=" "
+            ></textarea>
+          </div>
+          <button class="button">Enviar</button>
           <p class="contactMensaje"></p>
         </form>
       </section>
       <section class="redes">
-        <h2 class="redesTitle">Tambien puede contactarnos en nuestras redes:</h2>
+        <h2 class="redesTitle">
+          Tambien puede contactarnos en nuestras redes:
+        </h2>
         <div class="botones">
           <button class="whatsApp"></button>
           <button class="faceBook"></button>
           <button class="telegram"></button>
         </div>
-        
       </section>
     </main>
     <footer class="footer">

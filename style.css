@@ -137,6 +137,7 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+
   .subir{
     z-index: 2;
   }

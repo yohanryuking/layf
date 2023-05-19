@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -122,9 +122,149 @@ body {
   z-index: -1;
 }
 
+section {
+  z-index: 2;
+  /* height: 80vh; */
+  background-color: #fff;
+}
+
+.contacto {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: rgb(81, 89, 90);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contactoTitle {
+  font-size: 5vw;
+  margin: 100px 0;
+}
+
+.contactoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 30%;
+}
+
+.div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 1.5vw;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: all 0.5s;
+}
+
+.labelt {
+  font-size: 1.5vw;
+}
+
+.input {
+  cursor: default;
+  padding: 0.6em 0.3em;
+  font-size: 1vw;
+  color: #fff;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+.area {
+  border: 2px solid #fff;
+}
+
+.button {
+  align-self: center;
+  font-size: 2vw;
+  width: 150px;
+  border-radius: 15px;
+  background: none;
+  border: none;
+  color: #fff;
+  border-top: 3px solid cyan;
+  border-bottom: 3px solid cyan;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  color: #25a6a6;
+  background: #fff;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: top left;
+  color: cyan;
+}
+
+@media screen and (max-width: 960px) {
+  .contactoTitle {
+    font-size: 7.5vw;
+  }
+
+  .contactoForm {
+    width: 50%;
+  }
+
+  .label {
+    font-size: 3vw;
+  }
+
+  .labelt {
+    font-size: 3vw;
+  }
+
+  .input {
+    font-size: 2.3vw;
+  }
+
+  .button {
+    font-size: 3vw;
+  }
+}
+
 @media screen and (max-width: 480px) {
-  .subir{
+  .subir {
     z-index: 2;
+  }
+
+  .contactoTitle {
+    font-size: 11vw;
+  }
+
+  .contactoForm {
+    width: 75%;
+  }
+
+  .label {
+    font-size: 6vw;
+  }
+
+  .labelt {
+    font-size: 6vw;
+  }
+
+  .input {
+    font-size: 4.6vw;
+  }
+
+  .button {
+    font-size: 6vw;
   }
 }
 
