@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
     <title>Document</title>
   </head>
@@ -30,7 +30,7 @@
         <ul class="header__ul">
           <li class="header__li">
             <a href="../index.html">
-              <p >Inicio</p>
+              <p>Inicio</p>
             </a>
           </li>
           <li class="header__li">
@@ -51,11 +51,42 @@
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer class="footer">
-        <div class="footer__div">
-          <p>© LAYF 2023</p> 
+    <main>
+      <section class="contacto">
+        <h1 class="contactoTitle">Contactenos</h1>
+        <form action="" class="contactoForm">
+          <label for="nombre" class="labelNombre">Nombre</label>
+          <input type="text" name="" id="nombre" class="nombre" />
+          <label for="asunto" class="labelAsunto">Asunto</label>
+          <input type="text" name="" id="asunto" class="asunto" />
+          <label for="email" class="labelEmail">Correo</label>
+          <input type="email" name="" id="email" class="email" />
+          <label for="texto" class="labelTexta">Contenido</label>
+          <textarea
+            name=""
+            id="texto"
+            cols="30"
+            rows="10"
+            class="texto"
+          ></textarea>
+          <butto class="button">Enviar</butto>
+          <p class="contactMensaje"></p>
+        </form>
+      </section>
+      <section class="redes">
+        <h2 class="redesTitle">Tambien puede contactarnos en nuestras redes:</h2>
+        <div class="botones">
+          <button class="whatsApp"></button>
+          <button class="faceBook"></button>
+          <button class="telegram"></button>
         </div>
+        
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__div">
+        <p>© LAYF 2023</p>
+      </div>
     </footer>
   </body>
 </html>
