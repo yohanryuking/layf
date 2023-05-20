@@ -27,7 +27,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(30, 28, 28, 0.9);
+  background-color: rgba(30, 28, 28, 1);
   padding: 10px;
 }
 
@@ -72,11 +72,11 @@ body {
   }
 
   .header__li a {
-    font-size: 3.5vh;
+    font-size: 4vw;
   }
 
   .header__img {
-    height: 7vh;
+    height: 8vw;
     border-radius: 3px;
   }
 }
@@ -91,7 +91,12 @@ body {
   }
 
   .header__img {
-    height: 5vh;
+    height: 11vw;
+  }
+
+   .header__li a {
+    font-size: 3.5vh;
+    font-size: 7.5vw;
   }
 
   .header__button {
@@ -108,6 +113,11 @@ body {
   }
 
   .header__nav {
+    z-index: 3;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 265px;
+    background-color: rgba(30, 28, 28, 1);
     width: 100%;
   }
 }
@@ -141,6 +151,16 @@ section {
 .contactoTitle {
   font-size: 5vw;
   margin: 100px 0;
+  transition: 5s;
+  animation: backwards yphan 1.6s;
+}
+
+@keyframes yphan {
+  0% {
+    opacity: 0;
+    transform: translatex(-150px);
+    /* transform: translateY(-100px); */
+  }
 }
 
 .contactoForm {
@@ -164,10 +184,12 @@ section {
   left: 5px;
   transform: translateY(10px);
   transition: all 0.5s;
+  animation: backwards yphan 1.2s;
 }
 
 .labelt {
   font-size: 1.5vw;
+  animation: backwards yphan 1.2s;
 }
 
 .input {
@@ -179,6 +201,7 @@ section {
   background: none;
   border: none;
   border-bottom: 2px solid #fff;
+  animation: backwards yphan 0.8s;
 }
 
 .area {
@@ -196,6 +219,7 @@ section {
   border-top: 3px solid cyan;
   border-bottom: 3px solid cyan;
   transition: all 0.3s;
+  animation: backwards yphan 0.7s;
 }
 
 .button:hover {
@@ -203,6 +227,7 @@ section {
   background: #fff;
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
+  transform: scale(1.2);
 }
 
 .input:focus + .label,
@@ -268,12 +293,74 @@ section {
   }
 }
 
+.redes {
+  background-color: rgb(30, 28, 28);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.redesTitle {
+  font-size: 3vw;
+  padding: 80px 30px;
+}
+
+.botones {
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.redes__container {
+  margin-bottom: 100px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.redes__text {
+  font-size: 2vw;
+}
+
+.redes__button {
+  background: none;
+  border-radius: 50%;
+  border: none;
+  transition: 0.3s;
+  padding: 30px;
+}
+
+.redes__button svg {
+  fill: #fff;
+  transition: 0.3s;
+  border-radius: 40%;
+  /* padding: 20px; */
+  transform: scale(3);
+}
+
+.redes__button svg:hover {
+  background-color: #fff;
+  fill: #25a6a6;
+  transform: scale(3.5);
+}
+
+@media screen and (max-width:480px){
+  .redesTitle{
+    font-size: 6vw;
+  }
+
+  .redes__text{
+    font-size: 4vw;
+  }
+}
+
 /* los estilos del footer */
 
 .footer__div {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  background-color: rgb(30, 28, 28);
+  background-color: rgb(0, 0, 0);
   width: 100%;
   text-align: center;
   padding: 5px 0;

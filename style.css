@@ -205,6 +205,7 @@ a {
 .primero__button:hover {
   color: #1c8a8a;
   background-color: #ffffff80;
+  transform: scale(1.2);
 }
 
 /* el responsive de la primera seccion */
@@ -331,6 +332,7 @@ a {
 .servicios__button:hover {
   color: #000;
   background-color: #ffffff80;
+  transform: scale(1.2);
 }
 
 /* el responsive de la seccion de srvicios */
@@ -485,6 +487,7 @@ a {
 .cursos .card__button:hover {
   color: #000;
   background-color: #fff;
+  transform: scale(1.2);
 }
 
 .button__content {
@@ -519,10 +522,12 @@ a {
 .cursos__button:hover {
   font-size: 3.3vw;
   justify-content: space-around;
+  transform: scale(1.2);
 }
 
 .cursos__button svg:hover {
   transform: translateX(20px);
+  transform: scale(1.2);
 }
 
 /* el responsive de los cursos */
@@ -614,6 +619,7 @@ a {
 
   .cursos__button:hover {
     font-size: 6vw;
+
   }
 }
 
