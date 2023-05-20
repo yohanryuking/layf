@@ -330,7 +330,6 @@ section {
   fill: #fff;
   transition: 0.3s;
   border-radius: 40%;
-  /* padding: 20px; */
   transform: scale(3);
 }
 
@@ -347,6 +346,10 @@ section {
 
   .redes__text{
     font-size: 4vw;
+  }
+
+  .botones{
+    padding: 0 40px;
   }
 }
 
