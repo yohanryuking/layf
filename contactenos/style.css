@@ -27,7 +27,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(30, 28, 28, 1);
+  background-color: rgba(30, 28, 28, .9);
   padding: 10px;
 }
 
@@ -113,11 +113,6 @@ body {
   }
 
   .header__nav {
-    z-index: 3;
-    position: absolute;
-    margin-left: -10px;
-    margin-top: 265px;
-    background-color: rgba(30, 28, 28, 1);
     width: 100%;
   }
 }
@@ -293,6 +288,8 @@ section {
   }
 }
 
+/* los estilos de las redes */
+
 .redes {
   background-color: rgb(30, 28, 28);
   color: #fff;
@@ -335,7 +332,6 @@ section {
   fill: #fff;
   transition: 0.3s;
   border-radius: 40%;
-  /* padding: 20px; */
   transform: scale(3);
 }
 
@@ -352,6 +348,10 @@ section {
 
   .redes__text{
     font-size: 4vw;
+  }
+
+  .redes__button{
+    padding: ;
   }
 }
 

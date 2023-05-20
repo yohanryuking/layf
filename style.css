@@ -31,7 +31,7 @@ a {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(30, 28, 28, 1);
+  background-color: rgba(30, 28, 28, .9);
   padding: 10px;
 }
 
@@ -117,11 +117,6 @@ a {
   }
 
   .header__nav {
-    z-index: 3;
-    position: absolute;
-    margin-left: -10px;
-    margin-top: 265px;
-    background-color: rgba(30, 28, 28, 1);
     width: 100%;
   }
 }
@@ -137,8 +132,7 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-
-  .subir{
+  .subir {
     z-index: 2;
   }
 }
@@ -619,7 +613,6 @@ a {
 
   .cursos__button:hover {
     font-size: 6vw;
-
   }
 }
 
