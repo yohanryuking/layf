@@ -113,11 +113,6 @@ body {
   }
 
   .header__nav {
-    z-index: 3;
-    position: absolute;
-    margin-left: -10px;
-    margin-top: 265px;
-    background-color: rgba(30, 28, 28, 1);
     width: 100%;
   }
 }
