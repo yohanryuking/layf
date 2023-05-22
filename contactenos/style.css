@@ -5,7 +5,7 @@
 }
 
 body {
-  /* height: 100vh; */
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,6 +41,11 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.header__nav {
+  transition: opacity 1s;
+  opacity: 1;
 }
 
 .header__button svg {
@@ -83,7 +88,11 @@ body {
 
 @media screen and (max-width: 480px) {
   .mostrar {
-    display: none;
+    /* display: none; */
+    transition: opacity 1s;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
   }
 
   .header {
@@ -94,7 +103,7 @@ body {
     height: 11vw;
   }
 
-   .header__li a {
+  .header__li a {
     font-size: 3.5vh;
     font-size: 7.5vw;
   }
@@ -120,10 +129,13 @@ body {
 /* los estilos del main */
 
 .oculto {
+  left: 0;
   position: absolute;
   background-color: #000000c9;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: all .6s;
   z-index: -1;
 }
 
@@ -260,6 +272,8 @@ section {
 
 @media screen and (max-width: 480px) {
   .subir {
+    transition: all .6s;
+    opacity: 1;
     z-index: 2;
   }
 
@@ -339,16 +353,16 @@ section {
   transform: scale(3.5);
 }
 
-@media screen and (max-width:480px){
-  .redesTitle{
+@media screen and (max-width: 480px) {
+  .redesTitle {
     font-size: 6vw;
   }
 
-  .redes__text{
+  .redes__text {
     font-size: 4vw;
   }
 
-  .botones{
+  .botones {
     padding: 0 40px;
   }
 }
