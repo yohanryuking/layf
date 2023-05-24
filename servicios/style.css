@@ -460,13 +460,12 @@ body {
 
 @media screen and (max-width: 480px) {
   .extra__title {
-    font-size: 8vw;
+    font-size: 6vw;
   }
 
   .extra__content,
   .inf {
-    color: red;
-    font-size: 5.5vw;
+    font-size: 3.5vw;
   }
 }
 
