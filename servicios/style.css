@@ -465,6 +465,7 @@ body {
 
   .extra__content,
   .inf {
+    color: red;
     font-size: 5.5vw;
   }
 }
