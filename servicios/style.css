@@ -458,7 +458,7 @@ body {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 480px) {
   .extra__title {
     font-size: 6vw;
   }
