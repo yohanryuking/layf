@@ -136,10 +136,6 @@ body {
   .subir {
     z-index: 3;
   }
-
-  .botones{
-
-  }
 }
 
 /* los estilos de la section servicios */
@@ -345,6 +341,14 @@ body {
     font-size: 3vw;
   }
 
+  .botones {
+    height: 0;
+  }
+
+  .oculto{
+    height: 90%;
+  }
+
   .correr {
     font-size: 8vw;
     top: 75vw;
@@ -467,7 +471,8 @@ body {
     font-size: 6vw;
   }
 
-  .inf, .extra{
+  .inf,
+  .extra {
     gap: 5vw;
   }
 
@@ -476,8 +481,8 @@ body {
     font-size: 4vw;
   }
 
-  .inf__button{
-   font-size:5vw;
+  .inf__button {
+    font-size: 5vw;
   }
 }
 
