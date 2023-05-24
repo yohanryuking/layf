@@ -120,6 +120,10 @@ body {
 
 /* los estilos del main */
 
+.servicios {
+  overflow-y: hidden;
+}
+
 .oculto {
   position: absolute;
   background-color: #000000c9;
@@ -297,7 +301,7 @@ body {
 
 @media screen and (max-width: 960px) {
   .servicios__title {
-    font-size: 5vw;
+    font-size: 8vw;
     margin: 30px 3.5vw;
   }
 
@@ -330,7 +334,7 @@ body {
   }
 
   .servicios__title {
-    font-size: 6vw;
+    font-size: 9.5vw;
   }
 
   .servicios__subtitle {
@@ -363,7 +367,7 @@ body {
   left: 0;
   position: absolute;
   width: 100%;
-  height: 120%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,6 +443,30 @@ body {
   align-items: flex-start;
   gap: 1.5vw;
   font-size: 1.6vw;
+}
+
+/* el responsive del extra */
+
+@media screen and (max-width: 960px) {
+  .extra__title {
+    font-size: 5vw;
+  }
+
+  .extra__content,
+  .inf {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .extra__title {
+    font-size: 6vw;
+  }
+
+  .extra__content,
+  .inf {
+    font-size: 3.5vw;
+  }
 }
 
 /* los estilos del footer */
