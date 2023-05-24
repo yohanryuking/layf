@@ -210,15 +210,15 @@ a {
   }
 
   .primero__title {
-    font-size: 6vw;
+    font-size: 10vw;
   }
 
   .primero__subtitle {
-    font-size: 4.5vw;
+    font-size: 5.5vw;
   }
 
   .primero__text {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
 
   .primero__button {
@@ -534,11 +534,11 @@ a {
   .cursos__title {
     text-align: center;
     padding: 0;
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   .cursos__subtitle {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 
   .cursos__cards {

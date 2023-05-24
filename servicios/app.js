@@ -1,7 +1,38 @@
 window.onload = inicio;
 
-let corrido = 36, cards, cardConrainers;
+function tamano() {
+    if (window.innerWidth <= 960 && window.innerWidth >480) {
+        return 40;
+    }
+
+    if (window.innerWidth <= 480) {
+        return 50;
+    }
+
+    if (window.innerWidth > 960) {
+        return 36;
+    }
+}
+
+let corrido = tamano(), cards, cardConrainers, cardButtons, modalTitle, modalContent;
 presente = 2;
+
+const contenidoModal = [{
+    title: "Mentorias Privadas",
+    content: "Te ofrecemos asesoramiento personalizado y capacitación en diferentes áreas, gestión de proyectos, liderazgo o emprendimiento, idiomas, desarrollo y más."
+}, {
+    title: "Creacion de sitios web",
+    content: "Desarrollamos aplicaciones web y móviles a medida, con un diseño único y personalizado, utilizando las últimas tecnologias y siguiendo las mejores prácticas de seguridad y usabilidad."
+}, {
+    title: "Traducciones orales y de documentos",
+    content: "Contamos con un equipo de traducctores profesionales que pueden adaptar tus textos, con precisión y rapidez. Tambien ofrecemos servicios de interpretación simultánea o consecutiva para eventos, reuniones o conferencias."
+}, {
+    title: "Diseños de logotipos",
+    content: "Creamos logotipos originales y atractivos que reflejen la identidad y los valores de tu marca, siguiendo tus indicadores y preferencias."
+}, {
+    title: "Preparación para pruebas de ingreso",
+    content: "Te ayudamos a prepararte para el examen de admisíon a la universidad o al instituto que deseas imgresar, con material didáctico, simulacros y retroalimentación."
+}];
 
 function inicio() {
     document.querySelector(".header__button").onclick = mostrar;
@@ -9,23 +40,56 @@ function inicio() {
     document.querySelector(".atras").onclick = atras;
     cards = document.querySelectorAll(".card");
     cardConrainers = document.querySelectorAll(".card__container");
+    cardButtons = document.querySelectorAll(".card__button");
+    eventos();
+
+    document.querySelectorAll(".card__button")[2].onclick = () => {
+        document.querySelector(".modalContainer").classList.add("mostrar");
+    };
+    document.querySelector(".cerrarModal").onclick = () => {
+        document.querySelector(".modalContainer").classList.remove("mostrar");
+    };
+
+    modalTitle = document.querySelector(".modalTitle");
+    modalContent = document.querySelector(".modalContent");
+}
+
+function eventos() {
+    document.querySelector(".cerrarModal").onclick = () => {
+        document.querySelector(".modalContainer").classList.remove("mostrar");
+    }
+
+    for (let index = 2; index < 7; index++) {
+        cardButtons[index].onclick = () => {
+            document.querySelector(".modalContainer").classList.add("mostrar");
+        }
+    }
+}
+
+function contenido() {
+    modalTitle.innerHTML = contenidoModal[presente].title;
+    modalContent.innerHTML = contenidoModal[presente].content;
 }
 
 
 function mostrar() {
     document.querySelector(".header__nav").classList.toggle("mostrar");
     document.querySelector(".oculto").classList.toggle("subir");
+    document.querySelectorAll(".correr")[0].classList.toggle("noCorrer");
+    document.querySelectorAll(".correr")[1].classList.toggle("noCorrer");
 }
 
 function alante() {
     clases();
     movimientoD();
+    contenido();
 
 }
 
 function atras() {
     clases();
     movimientoI();
+    contenido();
 }
 
 function movimientoI() {
