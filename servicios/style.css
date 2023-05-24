@@ -334,7 +334,7 @@ body {
   }
 
   .servicios__title {
-    font-size: 9.5vw;
+    font-size: 11vw;
   }
 
   .servicios__subtitle {
@@ -460,12 +460,12 @@ body {
 
 @media screen and (max-width: 480px) {
   .extra__title {
-    font-size: 6vw;
+    font-size: 8vw;
   }
 
   .extra__content,
   .inf {
-    font-size: 3.5vw;
+    font-size: 5.5vw;
   }
 }
 
