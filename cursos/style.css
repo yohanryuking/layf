@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
 /* los estilos del header */
@@ -90,7 +91,12 @@ body {
   }
 
   .header__img {
-    height: 5vh;
+    height: 11vw;
+  }
+
+  .header__li a {
+    font-size: 3.5vh;
+    font-size: 7.5vw;
   }
 
   .header__button {
@@ -108,6 +114,7 @@ body {
 
   .header__nav {
     width: 100%;
+    z-index: 3;
   }
 }
 
@@ -117,43 +124,91 @@ body {
   position: absolute;
   background-color: #000000c9;
   width: 100%;
-  height: 50%;
+  height: 100%;
   z-index: -1;
 }
 
-.botones {
+@media screen and (max-width: 480px) {
+  .subir {
+    z-index: 3;
+  }
+}
+
+/* los estilos de la section cursos */
+
+.cursos {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("../assets/cursos.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.padre {
+  padding-top: 5vw;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  background-color: #000000c0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.botones {
+  top: 0;
+  top: 15vw;
+  left: 0;
+  width: 100%;
+  /* height: 85%; */
   position: absolute;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: start;
   opacity: 1;
 }
 
+.correr {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 2.5vw;
+  border: none;
+  background-color: #288a7590;
+  position: absolute;
+  z-index: 1;
+  transition: 0.3s;
+  top: 35vw;
+}
+
+.noCorrer {
+  display: none;
+}
+
 .alante {
-  margin-left: 90%;
+  margin-left: 85vw;
 }
 
 .atras {
-  margin-left: 8%;
+  margin-left: 10vw;
 }
 
-.mostrar1{
-  animation: forwards mostrar1 1s ease-in;
+.mostrar1 {
+  animation: forwards mostrar1 0.6s ease-in;
 }
 
-.mostrar2{
-  animation: forwards mostrar2 1s ease-out;
+.mostrar2 {
+  animation: forwards mostrar2 0.6s ease-in;
 }
 
 @keyframes mostrar1 {
   0% {
     opacity: 0;
-  }
-
-  50% {
-    opacity: 0.3;
   }
 
   100% {
@@ -166,60 +221,265 @@ body {
     opacity: 0;
   }
 
-  50% {
-    opacity: 0.3;
-  }
-
   100% {
     opacity: 1;
   }
 }
-
-/* .slider{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .slider__content {
   margin: 0 12.5vw;
   overflow: hidden;
 }
 
-.cards {
-  margin-left: -12.5vw;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10vw;
-  transition: 0.5s;
-  /* transform: translateX(-25%); */
+.cursos__title {
+  font-size: 6vw;
+  margin: 50px 3.5vw;
 }
 
-.correr {
-  position: absolute;
-  z-index: 2;
+.cursos__subtitle {
+  font-size: 1.3vw;
+  margin: 2vw 4vw;
+}
+
+.correr:hover {
+  color: rgb(30, 180, 180);
+  background-color: #fff;
+  transform: scale(1.3);
+}
+
+.cards {
+  overflow: hidden;
+  width: 75vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  gap: 10vw;
+  transition: 0.5s;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 
 .card {
-  z-index: 1;
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  z-index: 6;
   width: 26vw;
-  border: 2px solid #000;
-  margin-top: 50px;
+  height: 20vw;
+  border: 2px solid rgb(30, 180, 180);
+  border-radius: 15px;
 }
 
 .card__title {
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 
-.card__content {
-  font-size: 2vw;
+.card__button {
+  cursor: pointer;
+  font-size: 1.5vw;
+  color: #fff;
+  border: 2px solid rgb(30, 180, 180);
+  background: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.card__button:hover {
+  background-color: #fff;
+  color: rgb(30, 180, 180);
+  scale: 1.2;
+}
+
+/* el responsive de cursos */
+
+@media screen and (max-width: 960px) {
+  .cursos__title {
+    font-size: 8vw;
+    margin: 30px 3.5vw;
+  }
+
+  .cursos__subtitle {
+    font-size: 2vw;
+  }
+
+  .correr {
+    font-size: 3.5vw;
+    top: 45vw;
+  }
+
+  .card {
+    width: 30vw;
+    height: 26vw;
+  }
+
+  .card__title {
+    font-size: 4vw;
+  }
+
+  .card__button {
+    font-size: 2.5vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .subir {
     z-index: 2;
+  }
+
+  .cursos__title {
+    font-size: 11vw;
+  }
+
+  .cursos__subtitle {
+    font-size: 3vw;
+  }
+
+  .botones {
+    height: 0;
+  }
+
+  .oculto {
+    height: 90%;
+  }
+
+  .correr {
+    font-size: 8vw;
+    top: 85vw;
+  }
+
+  .card {
+    width: 40vw;
+    height: 35vw;
+  }
+
+  .card__title {
+    font-size: 5vw;
+  }
+
+  .card__button {
+    font-size: 3.5vw;
+  }
+}
+
+/* los estilos del modal  */
+
+.modalContainer {
+  top: 9vw;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.6s;
+}
+
+.modal {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50vw;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  padding: 50px;
+  background-color: rgb(81, 89, 90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.modalTitle {
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.modalContent {
+  font-size: 1.5vw;
+}
+
+.cerrarModal {
+  align-self: flex-end;
+  margin-top: -45px;
+  margin-right: -45px;
+}
+
+.mostrar {
+  z-index: 3;
+  transition: 0.6s;
+  opacity: 1;
+}
+
+/* los estilos del extra */
+
+.extra {
+  padding: 5vw 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: rgb(81, 89, 90);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2vw;
+}
+
+.extra__title {
+  font-size: 3.5vw;
+  margin-bottom: 2vw;
+}
+
+.extra__content {
+  font-size: 1.7vw;
+}
+
+.inf {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 1.5vw;
+  font-size: 1.6vw;
+}
+
+/* el responsive del extra */
+
+@media screen and (max-width: 960px) {
+  .extra__title {
+    font-size: 5vw;
+  }
+
+  .extra__content,
+  .inf {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .extra__title {
+    font-size: 6vw;
+  }
+
+  .inf,
+  .extra {
+    gap: 5vw;
+  }
+
+  .extra__content,
+  .inf {
+    font-size: 4vw;
+  }
+
+  .inf__button {
+    font-size: 5vw;
   }
 }
 

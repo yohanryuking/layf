@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../assets/img241.jpg" type="image/x-icon" />
     <script src="app.js"></script>
-    <title>Document</title>
+    <title>LAYF - cursos</title>
   </head>
+
   <body>
     <header class="header">
       <a class="header__a" href="../index.html"
@@ -35,7 +37,7 @@
           </li>
           <li class="header__li">
             <a href="../servicios/servicios.html">
-              <p >Servicios</p>
+              <p>Servicios</p>
             </a>
           </li>
           <li class="header__li">
@@ -52,41 +54,80 @@
       </nav>
     </header>
     <main class="main">
+      <div class="modalContainer">
+        <div class="modal">
+          <button class="cerrarModal card__button">X</button>
+          <h3 class="modalTitle">Curso de Administración</h3>
+          <p class="modalContent">
+            Este curso te enseñará a gestinar una empresa en el ambito
+            empresarial. Aprenderás sebre administración, negocios, ánalisis,
+            planificacíon, liderazgo y ñetica. Al finalizar el curso, podrás
+            resolver problemas reales en el mundo de los negocios y obtener un
+            certificado que acredite tus competencias.
+          </p>
+          <button class="botonModal card__button">continuar</button>
+        </div>
+      </div>
+      <div class="oculto"></div>
       <section class="cursos">
-        <!-- <h1 class="cursos__title">nusetsros cursos lo mejoe sedl mercaghdp</h1> -->
-        <div class="slider">
-          <div class="botones">
-            <button class="correr alante">0xzczc</button>
-            <button class="correr atras">0ljb</button>
-          </div>
-          <div class="slider__content">
-            <div class="cards">
-              <div class="card mostrar1">
-                <h1 class="card__title">Curso de ingles</h1>
-                <p class="card__content">
-                  Aprende ingles de forma facil y divertida con nuestro metodo
-                  interactivo y personalizado.
-                </p>
-                <a href=""><button class="card__button">Inscribirme</button></a>
-              </div>
-              <div class="card mostrar1">
-                <h1 class="card__title">Curso de Administracion</h1>
-                <p class="card__content">
-                  Aprende a gestionar una organizacion con nuestro programa de
-                  administracion y negocios.
-                </p>
-                <a href=""><button class="card__button">Inscribirme</button></a>
-              </div>
-              <div class="card mostrar1">
-                <h1 class="card__title">Curso de Programacion</h1>
-                <p class="card__content">
-                  Domina los lenguajes y herramientas mas usados en el mercado
-                  con nuestro curso de programacion
-                </p>
-                <a href=""><button class="card__button">Inscribirme</button></a>
+        <div class="padre">
+          <h1 class="cursos__title">Nuestros cursos</h1>
+          <h2 class="cursos__subtitle">
+            En LAYF queremos que aprendas a vivir mejor. Por eso te ofresemos
+            cursos online de diferentes temáticas relacionadas con el desarrollo
+            personal personal y profesional. Con nuestros cursos podrás aprender
+            idiomas, programación, administración empresarial y mucho más.
+            Nuestros cursos son impartidos por profesionales cualificados y
+            tienen una duración flexible. Ademas, al finalizar cada curso
+            recibirás un certificado de LAYF que acredita tus conocimientos.
+          </h2>
+          <div class="slider">
+            <div class="botones">
+              <button class="correr alante">></button>
+              <button class="correr atras"><</button>
+            </div>
+            <div class="slider__content">
+              <div class="cards">
+                <div class="card__container" style="opacity: 0.5">
+                  <div class="card mostrar1">
+                    <h3 class="card__title">Curso de ingles</h3>
+                    <button class="card__button">Ver más</button>
+                  </div>
+                </div>
+                <div class="card__container">
+                  <div class="card mostrar1">
+                    <h3 class="card__title">Curso de Administracion</h3>
+                    <button class="card__button">Ver más</button>
+                  </div>
+                </div>
+                <div class="card__container" style="opacity: 0.5">
+                  <div class="card mostrar1">
+                    <h3 class="card__title">Curso de Programacion</h3>
+                    <button class="card__button">Ver más</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="extra">
+        <div class="sup">
+          <h2 class="extra__title">
+            ¿No encuentras en el catalogo lo que buscas?
+          </h2>
+          <p class="extra__content">
+            Contamos con un servicio de atencio a los clientes de máxima
+            calidad.
+          </p>
+        </div>
+        <div class="inf">
+          <p class="inf__content">
+            No dude en contactarnos y comentarnos su situacion o propuesta.
+          </p>
+          <a href="../contactenos/contactenos.html"
+            ><button class="inf__button card__button">contactanos</button></a
+          >
         </div>
       </section>
     </main>

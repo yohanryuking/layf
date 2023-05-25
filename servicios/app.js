@@ -42,10 +42,7 @@ function inicio() {
     cardConrainers = document.querySelectorAll(".card__container");
     cardButtons = document.querySelectorAll(".card__button");
     eventos();
-
-    document.querySelectorAll(".card__button")[2].onclick = () => {
-        document.querySelector(".modalContainer").classList.add("mostrar");
-    };
+    
     document.querySelector(".cerrarModal").onclick = () => {
         document.querySelector(".modalContainer").classList.remove("mostrar");
     };
