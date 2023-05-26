@@ -93,23 +93,23 @@ function movimientoI() {
             cardConrainers[2].style = "opacity:1";
             presente = 2;
             break;
-        case 2:
+        case 0:
             cards[1].style = `transform:translatex(0)`;
             cardConrainers[0].style = "opacity:.5";
             cards[2].style = `transform:translatex(0)`;
             cardConrainers[2].style = "opacity:.5";
             cards[0].style = `transform:translatex(0)`;
             cardConrainers[1].style = "opacity:1";
-            presente = 0;
+            presente = 1;
             break;
-        case 0:
+        case 2:
             cards[0].style = `transform:translatex(${corrido}vw)`;
-            cardConrainers[1].style = "opacity:.5";
+            cardConrainers[1].style = "opacity:1";
             cards[2].style = `transform:translatex(-${corrido * 2}vw)`;
             cardConrainers[2].style = "opacity:.5";
             cards[1].style = `transform:translatex(${corrido}vw)`;
             cardConrainers[0].style = "opacity:1";
-            presente = 1;
+            presente = 0;
             break;
         default:
             break;

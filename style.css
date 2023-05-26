@@ -160,6 +160,16 @@
   font-size: 1.3vw;
 }
 
+.dos{
+  padding: 0 1vw;
+  margin-left: 30px;
+}
+
+.dos .klista__elemento {
+  padding: 5px 0;
+  font-size: 1.2vw;
+}
+
 .kcards {
   margin-top: 2vw;
 }
@@ -192,6 +202,11 @@
   .klista__elemento{
     font-size: 2vw;
   }
+
+  .dos .klista__elemento{
+    font-size: 1.9vw;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -205,6 +220,10 @@
 
   .klista__elemento{
     font-size: 3.5vw;
+  }
+
+  .dos .klista__elemento{
+    font-size: 3.4vw;
   }
 }
 
@@ -453,6 +472,15 @@
   font-size: 3vw;
   transition: 0.3s;
 }
+
+.cursos a:visited{
+  color: rgb(30, 180, 180);
+}
+
+.cursos a{
+  color: rgb(30, 180, 180);
+}
+
 
 .cursos__button svg {
   transition: 0.3s;
