@@ -35,6 +35,7 @@
 
 .modalContent {
   font-size: 1.5vw;
+  text-align: center;
 }
 
 .cerrarModal {
@@ -47,3 +48,51 @@
   z-index: 3;
   transition: 0.6s;
   opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .modalContainer {
+    top: 0;
+    height: 100%;
+  }
+
+  .modal {
+    width: 75vw;
+  }
+
+  .modalTitle {
+    font-size: 3.5vw;
+  }
+
+  .modalContent {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modalContainer {
+    top: 0;
+    height: 110%;
+  }
+
+  .modal {
+    width: 80vw;
+  }
+
+  .modalTitle {
+    font-size: 5vw;
+  }
+
+  .modalContent {
+    font-size: 4vw;
+  }
+
+  .cerrarModal {
+    margin-top: -15px;
+    margin-right: -15px;
+  }
+
+  .modal {
+    padding: 20px;
+  }
+}

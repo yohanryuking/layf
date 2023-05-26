@@ -31,15 +31,6 @@
   animation: backwards yphan .8s;
 }
 
-/* el responsive de cursos */
-
-@media screen and (max-width: 960px) {
-}
-
-@media screen and (max-width: 480px) {
-
-}
-
 /* los estilos del extra */
 
 .extra {
@@ -103,10 +94,6 @@
 
 @media screen and (max-width: 480px) {
 /* los cursos */
-
-    .subir {
-    z-index: 2;
-  }
 
   .cursos__title {
     font-size: 11vw;

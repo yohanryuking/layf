@@ -96,10 +96,6 @@
 @media screen and (max-width: 480px) {
 
 /* los servicios  */
-  .subir {
-    z-index: 2;
-  }
-
   .servicios__title {
     font-size: 11vw;
   }
