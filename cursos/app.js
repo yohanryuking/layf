@@ -26,12 +26,12 @@ const contenidoModal = [
   {
     title: "Curso de Alemán",
     content:
-      "El curso de aleman de LAYF te ofrece clases en vivo con profesores expertos en la materia, ejercicios interactivos y material didáctico actualizado. El curso se adapta a tu nivel y a tus objetivos, y te da flexibilidad de horario y certificado oficial.",
+      "¿Quieres sumergirte en la cultura Alemana y aprender su idioma?¡Nuestro curso es la opción perfecta para ti! Aprenderás los fundamentos del idioma y mejorarás tus habilidades comunicativas. ¡No esperes más y comienza tu aventura con el Alemán hoy mismo!.",
   },
   {
     title: "Curso de Francés",
     content:
-      "El curso de frances de LAYF te ofrece clases en vivo con profesores expertos en la materia, ejercicios interactivos y material didáctico actualizado. El curso se adapta a tu nivel y a tus objetivos, y te da flexibilidad de horario y certificado oficial.",
+      "¿Quieres aprender Francés? ¡Únete a nuestro curso! Aprenderás los elementos lingüisticos y gramaticales del idioma y mejorarás tus habilidades comunicativas. ¡No esperes más y comienza tu aventura con el Francés hoy mismo!.",
   },
   {
     title: "Curso de Inglés",
