@@ -18,8 +18,8 @@ let corrido = tamano(), cards, cardConrainers, cardButtons, modalTitle, modalCon
 presente = 2;
 
 const contenidoModal = [{
-    title: "Mentorias Privadas",
-    content: "Te ofrecemos asesoramiento personalizado y capacitación en diferentes áreas, gestión de proyectos, liderazgo o emprendimiento, idiomas, desarrollo y más."
+    title: "Mentorías Privadas",
+    content: "Te ofrecemos asesoramiento personalizado y capacitación en diferentes áreas, como la gestión de proyectos, liderazgo o emprendimiento, idiomas, desarrollo y más."
 }, {
     title: "Creación de sitios web",
     content: "Desarrollamos aplicaciones web y móviles a medida, con un diseño único y personalizado, utilizando las últimas tecnologías y siguiendo las mejores prácticas de seguridad y usabilidad."
@@ -28,10 +28,10 @@ const contenidoModal = [{
     content: "Contamos con un equipo de traductóres profesionales que pueden adaptar tus textos, con precisión y rapidez. Tambien ofrecemos servicios de interpretación simultánea o consecutiva para eventos, reuniones o conferencias."
 }, {
     title: "Diseños de logotipos",
-    content: "Creamos logotipos originales y atractivos que reflejen la identidad y los valores de tu marca, siguiendo tus indicadores y preferencias."
+    content: "Creamos logotipos personalizados y atractivos que reflejen la identidad y los valores de tu marca, siguiendo tus indicadores y preferencias."
 }, {
     title: "Preparación para pruebas de ingreso",
-    content: "Te ayudamos a prepararte para el exámen de admisíon a la universidad o al instituto que deseas ingresar, con material didáctico, simulacros y retroalimentación."
+    content: "Te ayudamos a prepararte para el exámen de admisión a la universidad, con material didáctico, simulacros y retroalimentación."
 }];
 
 function inicio() {
