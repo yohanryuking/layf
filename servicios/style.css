@@ -127,7 +127,3 @@
     font-size: 5vw;
   }
 }
-
-.cards {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
