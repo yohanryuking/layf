@@ -8,9 +8,10 @@
 .cortina {
   width: 100%;
   background-color: rgba(30, 28, 28, 0.6);
+  display: flex;
   display: grid;
+  grid-template-columns: 2fr 1fr;
   padding: 180px 0 180px 50px;
-  grid-template-columns: 2.5fr 1fr;
   color: #fff;
 }
 
@@ -53,6 +54,7 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 3vw;
+  background-color: rgba(27, 148, 178, 0.47);
   background: #25a6a680;
   border: none;
   border-radius: 20px;
@@ -63,7 +65,9 @@
 }
 
 .primero__button:hover {
+  color: rgb(31, 139, 139);
   color: #1c8a8a;
+  background-color: rgba(255, 255, 255, 0.597);
   background-color: #ffffff80;
   transform: scale(1.2);
 }
@@ -126,8 +130,6 @@
 
 /* los estilos de quienes somos  */
 
-/* los estilos de la segunda section */
-
 .ksomos {
   color: #fff;
   background-color: rgb(52, 80, 87);
@@ -160,7 +162,7 @@
   font-size: 1.3vw;
 }
 
-.dos{
+.dos {
   padding: 0 1vw;
   margin-left: 30px;
 }
@@ -171,25 +173,33 @@
 }
 
 .kcards {
+  display: flex;
   margin-top: 2vw;
 }
 
-.kcards .card__title {
-  text-align: center;
+.card__container {
+  width: 40%;
 }
 
 .kcards .card {
+  margin: 2%;
+  padding: 0 20px;
   border-radius: 15px;
   border-top: 2px solid rgb(30, 180, 180);
   border-bottom: none;
 }
 
-.kcards .card__content {
+.card__title {
+  text-align: center;
+}
+
+.card__content {
   padding: 5%;
   padding-top: 7%;
 }
 
 /* el responsive de ksomos */
+
 @media screen and (max-width: 960px) {
   .ksomos__title {
     font-size: 6vw;
@@ -199,14 +209,13 @@
     font-size: 2.5vw;
   }
 
-  .klista__elemento{
+  .klista__elemento {
     font-size: 2vw;
   }
 
-  .dos .klista__elemento{
+  .dos .klista__elemento {
     font-size: 1.9vw;
   }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -218,23 +227,37 @@
     font-size: 3.5vw;
   }
 
-  .klista__elemento{
+  .klista__elemento {
     font-size: 3.5vw;
   }
 
-  .dos .klista__elemento{
+  .dos .klista__elemento {
     font-size: 3.4vw;
+  }
+
+  .kcards{
+    flex-direction: column;
+  }
+
+  .card__container{
+    width: 100%;
   }
 }
 
+/* la section de servicios */
+
 .servicios {
-  display: grid;
-  grid-template-rows: 1.5fr 5fr 0.6fr;
+  display: flex;
+  flex-direction: column;
   padding: 10px 50px;
   align-self: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   background-color: rgb(81, 89, 90);
+}
+
+.servicios *{
+  margin-top: 2%;
 }
 
 .servicios__titles {
@@ -254,9 +277,11 @@
 }
 
 .servicios__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  display: flex;
+}
+
+.servicios__content *{
+  margin: 0 1%;
 }
 
 .servicios .card {
@@ -292,7 +317,7 @@
 
 .servicios__button:hover {
   color: #000;
-  background-color: #ffffff80;
+  background-color: rgba(255, 255, 255, 0.597);
   transform: scale(1.2);
 }
 
@@ -345,7 +370,7 @@
   }
 
   .servicios__content {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   .servicios__title {
@@ -387,226 +412,19 @@
   }
 }
 
-/* los estilos de la seccion de cursos */
-.cursos {
-  background-image: url(assets/img339.jpg);
-  background-position: center;
-  background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.padre {
-  padding: 10px 50px;
-  background-color: rgba(30, 28, 28, 0.6);
-  color: #fff;
-  display: grid;
-  grid-template-rows: 2fr 3fr 1.5fr;
-}
-
-.cursos__titles {
-  padding: 50px 0;
-}
-
-.cursos__title {
-  font-size: 4vw;
-  padding-left: 150px;
-}
-
-.cursos__subtitle {
-  font-size: 1.5vw;
-  text-align: center;
-}
-
-.cursos__cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
-}
-
-.cursos .card {
-  color: rgb(30, 28, 28);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #cac8c8;
-  padding: 0 20px;
-  box-shadow: cyan 0px 0px 5px 1px;
-}
-
-.card__button {
-  border: none;
-  border-radius: 15px;
-  color: #fff;
-  background-color: #000;
-  font-size: 2vw;
-  padding: 5px 10px;
-  align-self: center;
-  transition: 0.3s;
-}
-
-.cursos .card__button:hover {
-  color: #000;
-  background-color: #fff;
-  transform: scale(1.2);
-}
-
-.button__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.cursos__button {
-  margin-right: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 15px;
-  border: none;
-  background: none;
-  color: #fff;
-  font-size: 3vw;
-  transition: 0.3s;
-}
-
-.cursos a:visited{
-  color: rgb(30, 180, 180);
-}
-
-.cursos a{
-  color: rgb(30, 180, 180);
-}
-
-
-.cursos__button svg {
-  transition: 0.3s;
-  fill: #fff;
-  height: 100px;
-  width: 100px;
-}
-
-.cursos__button:hover {
-  font-size: 3.3vw;
-  justify-content: space-around;
-  transform: scale(1.2);
-}
-
-.cursos__button svg:hover {
-  transform: translateX(20px);
-  transform: scale(1.2);
-}
-
-/* el responsive de los cursos */
-
-@media screen and (max-width: 960px) {
-  .padre {
-    grid-template-rows: 0.05fr 1fr 0.2fr;
-  }
-
-  .cursos__title {
-    text-align: center;
-    padding: 0;
-    font-size: 7vw;
-  }
-
-  .cursos__subtitle {
-    font-size: 2.5vw;
-  }
-
-  .cursos__cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .cursos .card {
-    text-align: center;
-    padding: 30px;
-    width: 60%;
-  }
-
-  .card__button {
-    margin: 50px;
-    font-size: 3.5vw;
-  }
-
-  .cursos__button {
-    font-size: 5vw;
-  }
-
-  .cursos__button:hover {
-    font-size: 5.6vw;
-  }
-
-  .der {
-    margin-left: 40%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .padre {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .cursos .card {
-    width: 100%;
-    margin: 0;
-  }
-
-  .der {
-    margin-left: 0;
-  }
-
-  .cursos .card__title {
-    font-size: 7vw;
-  }
-
-  .card button {
-    font-size: 5vw;
-  }
-
-  .cursos__title {
-    padding: 10px 0;
-    text-align: center;
-    font-size: 9vw;
-  }
-
-  .cursos__subtitle {
-    font-size: 4vw;
-  }
-
-  .cursos__button {
-    font-size: 6vw;
-    padding: 0;
-    margin: 0;
-    align-self: center;
-  }
-
-  .cursos__button:hover {
-    font-size: 6vw;
-  }
-}
-
 /* los estios de las seccion de informacion */
 .informacion {
   color: #fff;
   background-color: rgb(30, 28, 28);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   padding: 80px 0px 80px 80px;
   gap: 30px;
 }
 
 .informacion__content {
-  display: grid;
-  grid-template-rows: 1fr 0.8fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  /* align-items: center; */
 }
 
 .informacion__title {
@@ -619,12 +437,16 @@
 }
 
 .inf {
-  gap: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
+
+.inf *{
+  margin-top: 30px;
+}
+
 .informacion__tel,
 .informacion__gmail {
   color: #fff;
@@ -636,6 +458,7 @@
 }
 
 .informacion__img {
+  margin-right: 3vw;
   width: 42vw;
 }
 

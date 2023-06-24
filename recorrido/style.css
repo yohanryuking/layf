@@ -21,7 +21,7 @@
 .list__images {
   display: flex;
   padding: 0;
-  width: 400%;
+  width: 800%;
   animation: slide 12s infinite alternate-reverse ease-in-out;
 }
 
@@ -34,29 +34,57 @@
   0% {
     margin-left: 0%;
   }
-  20% {
+  10% {
     margin-left: 0%;
   }
 
-  25% {
+  12.5% {
     margin-left: -100%;
   }
-  45% {
+  22.5% {
     margin-left: -100%;
+  }
+
+  25% {
+    margin-left: -200%;
+  }
+  35% {
+    margin-left: -200%;
+  }
+
+  37.5% {
+    margin-left: -300%;
+  }
+  47.5% {
+    margin-left: -300%;
   }
 
   50% {
-    margin-left: -200%;
+    margin-left: -400%;
   }
-  70% {
-    margin-left: -200%;
+  60% {
+    margin-left: -400%;
+  }
+
+  62.5% {
+    margin-left: -500%;
+  }
+  72.5% {
+    margin-left: -500%;
   }
 
   75% {
-    margin-left: -300%;
+    margin-left: -600%;
+  }
+  85% {
+    margin-left: -600%;
+  }
+
+  90% {
+    margin-left: -700%;
   }
   100% {
-    margin-left: -300%;
+    margin-left: -700%;
   }
 }
 

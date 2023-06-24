@@ -3,7 +3,6 @@
   top: 15vw;
   left: 0;
   width: 100%;
-  /* height: 85%; */
   position: absolute;
   display: flex;
   justify-content: flex-start;
@@ -23,6 +22,7 @@
   font-size: 2.5vw;
   border: none;
   background-color: #288a7590;
+  background-color: rgba(40, 137, 137, 0.558);
   position: absolute;
   z-index: 1;
   transition: 0.3s;
@@ -83,20 +83,22 @@
 .cards {
   overflow: hidden;
   width: 75vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
   justify-content: center;
   justify-items: center;
-  gap: 10vw;
   transition: 0.5s;
   margin-top: 30px;
   margin-bottom: 100px;
 }
 
+.card__container{
+  margin: 0 5vw;
+}
+
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   z-index: 6;
